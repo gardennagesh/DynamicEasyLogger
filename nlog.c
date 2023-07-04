@@ -80,6 +80,7 @@ int lset = 0;
         if (!(fp) || !lset) {
 		printf ("Pls chk nlog.conf file. Not exist OR content is incorrect\n\r");
 	}
+	if (fp) fclose(fp);
 }
 
 int main (int argc, char*argv[]) {
